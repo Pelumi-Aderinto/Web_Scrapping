@@ -26,7 +26,7 @@ class News(db.Document):
         }
 
 
-@app.route('/Online_News/News', methods=['GET','POST'])
+@app.route('/', methods=['GET','POST'])
 def api_search():
     if request.method == 'GET':
         print(request.method)
