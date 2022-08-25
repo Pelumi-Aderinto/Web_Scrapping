@@ -26,7 +26,7 @@ class News(db.Document):
         }
 
 
-@app.route('/', methods=['GET','POST'])
+@app.route('/')
 def api_search():
     if request.method == 'GET':
         print(request.method)
@@ -34,11 +34,7 @@ def api_search():
         for news in News.objects:
             D_News.append(news)
         return make_response(jsonify(D_News), 200)
-    elif request.method == 'POST':
-        content = request.json
-        news = News(Headlines = content['Headlines'], Links = content['Links'])
-        news.save()
-        return make_response('', 201)
+
 
 
     # if D_News:
