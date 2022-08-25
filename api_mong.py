@@ -17,11 +17,14 @@ db.init_app(app)
 class News(db.Document):
     Headlines = db.StringField()
     Links = db.StringField()
+    Story = db.StringField()
 
     def to_json(self):
         return {
             'Headlines' : self.Headlines,
-            'Links' : self.Links
+            'Links' : self.Links,
+            'Story' : self.Story
+
 
         }
 
