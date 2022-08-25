@@ -17,9 +17,9 @@ A coding challenge
 So I created two endpoints(or routes) and made publicly accessible on heroku. The first one which is the default("https://evening-badlands-93116.herokuapp.com/") route gives access to all the content of the database while  (https://evening-badlands-93116.herokuapp.com/<Headlines>) returns the details about the Headline inputted.
 Let's see for example
 
-  i.  [link here](https://evening-badlands-93116.herokuapp.com/) gives access to the entire content of the database.
+  i.   [link here](https://evening-badlands-93116.herokuapp.com/) gives access to the entire content of the database.
 
-  ii. [link here](https://evening-badlands-93116.herokuapp.com/Pollution  UK sewage turning Channel and North Sea into dumping ground, say French MEPs UK sewage turning Channel and North Sea into dumping ground, say French MEPs) gives access to a specific information for a certain searched headline.
+  ii.  [link here](https://evening-badlands-93116.herokuapp.com/Pollution  UK sewage turning Channel and North Sea into dumping ground, say French MEPs UK sewage turning Channel and North Sea into dumping ground, say French MEPs/) gives access to a specific information for a certain searched headline.
   
   User can then search for their article of choice and get the necessary details by including the Headline they are interested im after the heroku link
   
