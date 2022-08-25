@@ -1,6 +1,6 @@
 flask
 flask_mongoengine
-pythyon-dotenv
+pythyon-dotenv==0.20.0
 dnspython
 beautifulsoup4
 pymongo
