@@ -13,14 +13,22 @@ A coding challenge
 1. Addressing the first problem and using the beautifulsoup framework in python, I crawled an online news website(www.theguardian.com/au)
 2. After crawling the website and getting raw html tags, I then cleansed and processed it to be able to obtain the news headline, links to story and the content of the story.
 3. I hosted a mongo database on Atlas (cloud mongodb) and connected to it with my python sdk and insert the cleansed data in step 2 to it.
-4. I then wrote wrote an API to provide access to the content in the mongo database and also deployed it on heroku for public access. [link here](https://evening-badlands-93116.herokuapp.com/)
+4. I then wrote wrote an API to provide access to the content in the mongo database and also deployed it on heroku for public access. 
+So I created two endpoints(or routes) and made publicly accessible on heroku. The first one which is the default("https://evening-badlands-93116.herokuapp.com/") route gives access to all the content of the database while  (https://evening-badlands-93116.herokuapp.com/<Headlines>) returns the details about the Headline inputted.
+Let's see for example
 
-The Procfile and the requirement.txt files are required files to use HEROKU to be able to make my API written in "api_mong.py" publicly accessible.
+  i.   [link here](https://evening-badlands-93116.herokuapp.com/) gives access to the entire content of the database.
+
+  ii.  [link here](https://evening-badlands-93116.herokuapp.com/Pollution%20%20UK%20sewage%20turning%20Channel%20and%20North%20Sea%20into%20dumping%20ground,%20say%20French%20MEPs%20UK%20sewage%20turning%20Channel%20and%20North%20Sea%20into%20dumping%20ground,%20say%20French%20MEPs) gives access to a specific information for a certain searched headline = "Pollution  UK sewage turning Channel and North Sea into dumping ground, say French MEPs UK sewage turning Channel and North Sea into dumping ground, say French MEPs".
+  
+  Users can then search for their article of choice and get the necessary details by including the Headline they are interested in after the heroku link as a search tag
+  
+  The Procfile and the requirement.txt files are required files to use HEROKU to be able to make my API written in "api_mong.py" publicly accessible.
 
 
 
-### MAJOR CHALLENGES FACED
+### MAJOR CHALLENGE(S) FACED
 1. I was unable to scrap all data story effectively as not all hyperlinks led to a page with contents to scrap. Some links led to videos which kept on breaking my 'for' loop code midway and I was only able to scrap as many as my code could output before the breakage with youtube links.
-2. As at the time of the writing of this documentation, I have not been able to write the API to make the user search for articles by keyword. My API is only at the moment able to return all of the contents of the database.
+
 
 
