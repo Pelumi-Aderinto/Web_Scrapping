@@ -10,8 +10,8 @@ A coding challenge
 4. Write an API that provides access to the content in the mongo database. The user should be able to search for articles by keyword
 
 ### APPROACH TO SOLUTION
-1. Addressing the first problem and using the beautifulsoup framework in python, I crawled an online news website(theguardian.com)
-2. After crawl the website and getting raw html tags, I then cleansed and processed it to be able to obtain the news headline, links to story and the content of the story.
+1. Addressing the first problem and using the beautifulsoup framework in python, I crawled an online news website(www.theguardian.com/au)
+2. After crawling the website and getting raw html tags, I then cleansed and processed it to be able to obtain the news headline, links to story and the content of the story.
 3. I hosted a mongo database on Atlas (cloud mongodb) and connected to it with my python sdk and insert the cleansed data in step 2 to it.
 4. I then wrote wrote an API to provide access to the content in the mongo database and also deployed it on heroku for public access. [link here](https://evening-badlands-93116.herokuapp.com/)
 
@@ -20,6 +20,6 @@ A coding challenge
 
 ### MAJOR CHALLENGES FACED
 1. I was unable to scrap all data story effectively as not all hyperlinks led to a page with contents to scrap. Some links led to videos which kept on breaking my 'for' loop code midway and I was only able to scrap as many as my code could output before the breakage with youtube links.
-2. 
+2. As at the time of the writing of this documentation, I have not been able to write the API to make the user search for articles by keyword.
 
 
