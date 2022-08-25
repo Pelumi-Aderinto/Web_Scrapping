@@ -1,13 +1,14 @@
 from flask import Flask , make_response , request , jsonify
 from flask_mongoengine import MongoEngine
 import collections
-from dotenv import load_dotenv, find_dotenv
+# from dotenv import load_dotenv, find_dotenv
 import os
 
 app = Flask(__name__)
-load_dotenv(find_dotenv())
-password = os.environ.get("MONGODB")
-conn_str = f"mongodb+srv://pelvic:{password}@cluster0.zst9xg2.mongodb.net/Online_News?retryWrites=true&w=majority"
+# load_dotenv(find_dotenv())
+# password = os.environ.get("MONGODB")
+# conn_str = f"mongodb+srv://pelvic:{password}@cluster0.zst9xg2.mongodb.net/Online_News?retryWrites=true&w=majority"
+conn_str = f"mongodb+srv://pelvic:Pelvic4ever@cluster0.zst9xg2.mongodb.net/Online_News?retryWrites=true&w=majority"
 app.config['MONGODB_HOST'] = conn_str
 
 db = MongoEngine()
