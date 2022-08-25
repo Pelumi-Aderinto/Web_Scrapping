@@ -36,7 +36,17 @@ def api_search():
         D_News = []
         for news in News.objects:
             D_News.append(news)
-        return make_response(jsonify(D_News), 200)
+        return make_response(jsonify(D_News.to_json()), 200)
+
+@app.route('/<tags>')
+def specificbook(tags):
+    if request.method == 'GET':
+        news_obj = News.objects(Headlines=tags).first()
+        if news_obj:
+            return make_response(jsonify(news_obj.to_json(), 200))
+        else:
+            return make_response('', 404)
+
 
 
 
