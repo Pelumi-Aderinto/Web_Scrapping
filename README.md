@@ -21,6 +21,6 @@ The Procfile and the requirement.txt files are required files to use HEROKU to b
 
 ### MAJOR CHALLENGES FACED
 1. I was unable to scrap all data story effectively as not all hyperlinks led to a page with contents to scrap. Some links led to videos which kept on breaking my 'for' loop code midway and I was only able to scrap as many as my code could output before the breakage with youtube links.
-2. As at the time of the writing of this documentation, I have not been able to write the API to make the user search for articles by keyword.
+2. As at the time of the writing of this documentation, I have not been able to write the API to make the user search for articles by keyword. My API is only at the moment able to return all of the contents of the database.
 
 
