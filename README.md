@@ -15,6 +15,7 @@ A coding challenge
 3. I hosted a mongo database on Atlas (cloud mongodb) and connected to it with my python sdk and insert the cleansed data in step 2 to it.
 4. I then wrote wrote an API to provide access to the content in the mongo database and also deployed it on heroku for public access. [link here](https://evening-badlands-93116.herokuapp.com/)
 
+The Procfile and the requirement.txt files are required files to use HEROKU to be able to make my API publicly accessible.
 
 
 
