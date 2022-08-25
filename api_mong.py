@@ -36,7 +36,7 @@ def api_search():
         D_News = []
         for news in News.objects:
             D_News.append(news)
-        return make_response(jsonify(D_News.to_json()), 200)
+        return make_response(jsonify(D_News), 200)
 
 @app.route('/<tags>')
 def specificbook(tags):
