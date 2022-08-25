@@ -19,9 +19,9 @@ Let's see for example
 
   i.   [link here](https://evening-badlands-93116.herokuapp.com/) gives access to the entire content of the database.
 
-  ii.  [link here](https://evening-badlands-93116.herokuapp.com/Pollution  UK sewage turning Channel and North Sea into dumping ground, say French MEPs UK sewage turning Channel and North Sea into dumping ground, say French MEPs/) gives access to a specific information for a certain searched headline.
+  ii.  [link here](https://evening-badlands-93116.herokuapp.com/Pollution%20%20UK%20sewage%20turning%20Channel%20and%20North%20Sea%20into%20dumping%20ground,%20say%20French%20MEPs%20UK%20sewage%20turning%20Channel%20and%20North%20Sea%20into%20dumping%20ground,%20say%20French%20MEPs) gives access to a specific information for a certain searched headline = "Pollution  UK sewage turning Channel and North Sea into dumping ground, say French MEPs UK sewage turning Channel and North Sea into dumping ground, say French MEPs".
   
-  User can then search for their article of choice and get the necessary details by including the Headline they are interested im after the heroku link
+  Users can then search for their article of choice and get the necessary details by including the Headline they are interested in after the heroku link as a search tag
   
   The Procfile and the requirement.txt files are required files to use HEROKU to be able to make my API written in "api_mong.py" publicly accessible.
 
