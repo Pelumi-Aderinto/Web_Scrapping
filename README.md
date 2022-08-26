@@ -19,7 +19,7 @@ Let's see for example
 
   i.   [link here](https://evening-badlands-93116.herokuapp.com/) gives access to the entire content of the database.
 
-  ii.  [link here](https://evening-badlands-93116.herokuapp.com/Pollution%20%20UK%20sewage%20turning%20Channel%20and%20North%20Sea%20into%20dumping%20ground,%20say%20French%20MEPs%20UK%20sewage%20turning%20Channel%20and%20North%20Sea%20into%20dumping%20ground,%20say%20French%20MEPs) gives access to a specific information for a certain searched headline = "Pollution  UK sewage turning Channel and North Sea into dumping ground, say French MEPs UK sewage turning Channel and North Sea into dumping ground, say French MEPs".
+  ii.  [link here](https://evening-badlands-93116.herokuapp.com/Solomon%20Islands%20%20US%20ship%20unable%20to%20get%20permission%20to%20dock,%20Washington%20says%20US%20ship%20unable%20to%20get%20permission%20to%20dock,%20Washington%20says) gives access to a specific information for a certain searched headline = "Solomon Islands  US ship unable to get permission to dock, Washington says US ship unable to get permission to dock, Washington says".
   
   Users can then search for their article of choice and get the necessary details by including the Headline they are interested in after the heroku link as a search tag
   
