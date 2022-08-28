@@ -14,14 +14,14 @@ A coding challenge
 2. After crawling the website and getting raw html tags, I then cleansed and processed it to be able to obtain the news headline, links to story and the content of the story.
 3. I hosted a mongo database on Atlas (cloud mongodb) and connected to it with my python sdk and insert the cleansed data in step 2 to it.
 4. I then wrote wrote an API to provide access to the content in the mongo database and also deployed it on heroku for public access. 
-So I created two endpoints(or routes) and then made them publicly accessible on heroku. The first one which is the default("https://evening-badlands-93116.herokuapp.com/") route gives access to all the content of the database while  (https://evening-badlands-93116.herokuapp.com/<<Headlines>>) returns the details about the Headline strings inputted.
+So I created two endpoints(or routes) and then made them publicly accessible on heroku. The first one which is the default("https://evening-badlands-93116.herokuapp.com/") route gives access to all the content of the database while  (https://evening-badlands-93116.herokuapp.com/find?keyword=<>) returns the details about the Headline relating to the keyword searched.
 Let's see for example
 
   i.   [link here](https://evening-badlands-93116.herokuapp.com/) gives access to the entire content of the database.
 
-  ii.  [link here](https://evening-badlands-93116.herokuapp.com/Solomon%20Islands%20%20US%20ship%20unable%20to%20get%20permission%20to%20dock,%20Washington%20says%20US%20ship%20unable%20to%20get%20permission%20to%20dock,%20Washington%20says) gives access to a specific information for a certain searched headline = "Solomon Islands  US ship unable to get permission to dock, Washington says US ship unable to get permission to dock, Washington says".
+  ii.  [link here](https://evening-badlands-93116.herokuapp.com/find?keyword=Ministers) gives access to a specific information for a certain searched keyword(Ministers). You can replace this search term with anything of your choice you wish to know about.
   
-  Users can then search for their article of choice and get the necessary details by including the Headline they are interested in after the heroku link as a search tag
+  Users can then search for their article of choice and get the necessary details by including the keyword they are interested in after the heroku link as a search tag as seen in the hyperlinks above.
   
   The Procfile and the requirement.txt files are required files to use HEROKU to be able to make my API written in "api_mong.py" publicly accessible.
 
