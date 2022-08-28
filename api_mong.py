@@ -19,6 +19,15 @@ class News(db.Document):
     Links = db.StringField()
     Story = db.StringField()
 
+    meta = {
+        "indexes": [
+            {
+                'fields': ['$Headlines'],
+                'default_language': 'english'
+            }
+        ]
+    }
+
     def to_json(self):
         return {
             'Headlines' : self.Headlines,
@@ -38,14 +47,15 @@ def api_search():
             D_News.append(news)
         return make_response(jsonify(D_News), 200)
 
-@app.route('/<tags>')
-def specificbook(tags):
+@app.route('/find')
+def specificbook():
     if request.method == 'GET':
-        news_obj = News.objects(Headlines=tags).first()
+        tags = request.args.get('keyword')
+        news_obj = News.objects.search_text(tags).first()
         if news_obj:
             return make_response(jsonify(news_obj.to_json()), 200)
         else:
-            return make_response('', 404)
+            return make_response('Not found', 404)
 
 
 
