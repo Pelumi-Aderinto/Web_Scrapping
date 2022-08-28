@@ -43,7 +43,7 @@ def specificbook(tags):
     if request.method == 'GET':
         news_obj = News.objects(Headlines=tags).first()
         if news_obj:
-            return make_response(jsonify(news_obj.to_json(), 200))
+            return make_response(jsonify(news_obj.to_json()), 200)
         else:
             return make_response('', 404)
 
