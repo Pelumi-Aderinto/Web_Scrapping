@@ -19,7 +19,7 @@ Let's see for example
 
   i.   [link here](https://evening-badlands-93116.herokuapp.com/) gives access to the entire content of the database.
 
-  ii.  [link here](https://evening-badlands-93116.herokuapp.com/find?keyword=Ministers) gives access to a specific information for a certain searched keyword(Ministers). You can replace this search term with anything of your choice you wish to know about.
+  ii.  [link here](https://evening-badlands-93116.herokuapp.com/find?keyword=Ministers) gives access to a specific information for a certain searched keyword('Ministers') in the headlines story. You can replace this search term with anything of your choice you wish to know about.
   
   Users can then search for their article of choice and get the necessary details by including the keyword they are interested in after the heroku link as a search tag as seen in the hyperlinks above.
   
